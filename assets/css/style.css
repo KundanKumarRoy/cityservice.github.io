@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+/* ======== Reset ======== */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+
+/* ======== Variables ========*/
+
+:root {
+    --bg-brand: #00b8b8; 
+}
+
+
+/* ======== Global ========*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased; 
+     
+}
+.pointer{
+    cursor: pointer;
+}
+.text-brand{
+    color: var(--bg-brand);
+}
+.bg-brand{
+    background-color: var(--bg-brand);
+}
+.ob_cover{
+    object-fit: cover;
+}
+.ob-fill{
+    object-fit: fill;
+}
+.ob-contain{
+    object-fit: contain;
+}
+a{
+text-decoration: none;
+}
+.fs-xsm{
+    font-size: 10px!important;
+}
+.rounded-lg{
+    border-radius: 20px!important;
+}
+.c-f-c{
+    box-shadow: none!important;
+    outline: none!important;
+    background-color: transparent;
+}
+.btn:hover{
+    background-color: #00b8b8!important; 
+}
+/* .ctc:hover{
+    background-color: #00b8b8; 
+} */
+.hover:hover{
+    background-color: #333333!important;
+}
+.bg-light{
+    background-color: #eeeeee!important;
+}
+/*=============================== Hero page style =============================== */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav-link{
+    color: #fff;
+    font-weight: 500;
+    
+}
+.welcome-intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.service-img img{
+    width: 100%;
+    height: 300px;
+}
+/* ======================= What Our Client Say ===================== */
+.client-img{
+width: 100px;
+height: 100px; 
+ 
+}
+.client-thought{
+    width: 100%;
+    height: 436px;
+}
+.client-img >img{
+    width: 100%;
+    height: 100%; 
+    border: 1px solid #fff;
+    }
+/*============== contact us style ===================*/
+.shadow-cus{
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
+}
+/*  */
+.link-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #00b8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ======================= Responsive style ======================== */
+@media (max-width:768px){
+    .hero{
+        width: 100%;
+        height: 40vh;
+    }
+    .welcome-intro h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width:620px){
+    .hero{
+        width: 100%;
+        height: 40vh;
+    }
+}
+@media (max-width:540px){
+    .hero{
+        width: 100%;
+        height: 52vh;
+    }
+}
